@@ -1,15 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.poscoict</groupId>
-  <artifactId>frontend-dev-basics</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.poscoict</groupId>
+	<artifactId>frontend-dev-basics</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncodnig>utf-8</project.reporting.outputEncodnig>
 	</properties>
-	
+
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
@@ -57,12 +59,13 @@
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
-			</plugin>	
+			</plugin>
 		</plugins>
 	</build>
-	
-  
-  <modules>
-  	<module>ch02</module>
-  </modules>
+
+
+	<modules>
+		<module>ch02</module>
+		<module>ch03</module>
+	</modules>
 </project>
