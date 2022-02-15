@@ -6,12 +6,12 @@
 	<artifactId>frontend-dev-basics</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
+	
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncodnig>utf-8</project.reporting.outputEncodnig>
-	</properties>
-
+	</properties>	
+	
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
@@ -59,11 +59,10 @@
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
-			</plugin>
-		</plugins>
+			</plugin>	
+		</plugins>				
 	</build>
-
-
+			
 	<modules>
 		<module>ch02</module>
 		<module>ch03</module>
