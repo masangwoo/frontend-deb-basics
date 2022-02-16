@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	*{margin:0; padding:0}
+body { font-family:"맑은 고딕", "돋움" ; font-size: 0.75em;	color: #333; }
+
+.header {
+	width:630px;
+	height: 100px;
+	margin: 50px auto;
+	
+}
+
+.header .logo, .search-box{
+	float:left;
+	
+}
+
+.header .logo{
+	font-size:0;
+	width:222px;
+	height: 52px;
+	background: #fff url("/ch03/images/nsplite.png") no-repeat;
+	background-position: 0px -158px;
+	background-size:457px 434px;
+}
+
+.header .keyboard{
+	font-size:0;
+	display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-position: -43px -156px;
+    background-size: 209px 177px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    
+}
+
+.search-box{
+	width:400px;
+	height: 52px;
+	
+}
+
+.search-box input, .search-box a, .search-box button{
+	display:block;
+}
+
+.search-box input, .search-box .btn-search, .search-box a{
+	float:right;
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1 class="logo">네이버</h1>
+		<div class="search-box">
+			<div class="btn-search">
+				<button>돋보기</button>	
+			</div>
+			<a href="#" id="dropdown">드롭다운</a>
+			<a href="#" id="keyboard">키보드</a>
+			<input type="text"/>
+		</div>
+	</div>
+	
+</body>
+</html>
