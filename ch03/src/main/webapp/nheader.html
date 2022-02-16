@@ -8,15 +8,15 @@
 body { font-family:"맑은 고딕", "돋움" ; font-size: 0.75em;	color: #333; }
 
 .header {
-	width:630px;
+	width: 1000px;
 	height: 100px;
 	margin: 50px auto;
-	
+	position: relative;
+    height: 100%;
 }
 
 .header .logo, .search-box{
 	float:left;
-	
 }
 
 .header .logo{
@@ -25,7 +25,7 @@ body { font-family:"맑은 고딕", "돋움" ; font-size: 0.75em;	color: #333; }
 	height: 52px;
 	background: #fff url("/ch03/images/nsplite.png") no-repeat;
 	background-position: 0px -158px;
-	background-size:457px 434px;
+	background-size: 457px 434px;
 }
 
 .header .keyboard{
@@ -40,10 +40,31 @@ body { font-family:"맑은 고딕", "돋움" ; font-size: 0.75em;	color: #333; }
     
 }
 
-.search-box{
-	width:400px;
-	height: 52px;
-	
+.header .search-box{
+	position: relative;
+    width: 582px;
+    height: 52px;
+    border: 2px solid #19ce60;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: 50px;
+}
+
+.search-box input{
+	position:absolute;
+ 	border-width: 0;
+ 	outline:0;
+ 	border:none;
+ 	
+ 	width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700; 	
 }
 
 .search-box input, .search-box a, .search-box button{
@@ -54,18 +75,88 @@ body { font-family:"맑은 고딕", "돋움" ; font-size: 0.75em;	color: #333; }
 	float:right;
 }
 
+.search-box .btn-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 56px;
+    background-color: #19ce60;
+   /* -webkit-border-radius: 0 2px 2px 0;*/
+   
+   /* border-radius: 0 2px 2px 0;*/
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.search-box .btn-search .btn-searchButton{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("/ch03/images/nsplite.png");
+    background-position: -420px 0;
+    background-size: 457px 434px;
+    background-repeat: no-repeat;
+	margin-left:15px;
+	margin-top:15px
+}
+
+.search-box a#keyboard{
+    position: absolute;
+    top: 0;
+    right: 84px;
+    bottom: 0;
+    width: 36px;
+    z-index: 400;
+    margin-left: 50px;
+}
+
+.search-box a#keyboard .icon_keyboard{
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background: url("/ch03/images/nsplite.png");
+    background-position: -420px -395px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    background-size: 457px 434px;
+
+}
+
+
+.search-box a#dropdown{
+    position: absolute;
+    top: 0;
+    right: 64px;
+    bottom: 0;
+    width: 22px;
+    margin-left: 50px;
+}
+
+.search-box a#dropdown .icon_drop{
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background: url("/ch03/images/nsplite.png");
+    background-size: 457px 434px;
+    background-position: -408px -77px;
+    background-repeat: no-repeat;
+    margin-top:23px;
+    
+}
+
 </style>
 </head>
 <body>
 	<div class="header">
 		<h1 class="logo">네이버</h1>
 		<div class="search-box">
-			<div class="btn-search">
-				<button>돋보기</button>	
+			<div>
+				<div class="btn-search">   <span class=btn-searchButton> </span></div>
+				<a href="#" id="dropdown"> <span class="icon_drop">	     </span></a>
+				<a href="#" id="keyboard"> <span class="icon_keyboard">  </span></a>
+				<input type="text"/>
 			</div>
-			<a href="#" id="dropdown">드롭다운</a>
-			<a href="#" id="keyboard">키보드</a>
-			<input type="text"/>
 		</div>
 	</div>
 	
