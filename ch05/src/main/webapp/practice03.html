@@ -14,14 +14,23 @@ body {
 	font-size: 0.75em;
 	color: #333;
 }
+
+#join-form {
+	width: 220px; border:1px solid #666; margin:50px auto; padding:10px;
+}
+
+label.legend{display:block;}
+filedset{margin-top:10px; border:none;}
+input[type="submit"]{display:block;margin:10px auto; width:100px;}
 </style>
 </head>
 <body>
 	<form id="join-form" method="get">
 
-		<label class="legend">아이디</label> <input name="userid" type="text">
-		<br> <label class="legend">패스워드</label> <input name="passwprd"
-			type="password">
+		<label class="legend">아이디</label> 
+		<input name="userid" type="text"><br> 
+		<label class="legend">패스워드</label> 
+		<input name="passwprd"	type="password">
 
 		<fieldset>
 			<legend>생년월일</legend>
@@ -42,8 +51,8 @@ body {
 		</fieldset>
 
 		<fieldset>
-			<input type="checkbox" name="agree-prov" value="y" checked="checked"><label>약관에
-				동의합니다.</label>
+			<input type="checkbox" name="agree-prov" value="y" checked="checked">
+			<label>약관에	동의합니다.</label>
 		</fieldset>
 
 		<input type="submit" value="가입">
