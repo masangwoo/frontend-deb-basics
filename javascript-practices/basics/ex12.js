@@ -30,6 +30,17 @@
     }
 }
 
+Array.prototype.add = function(value) {
+    if(value instanceof Array) {
+        value.forEach(function(e){
+            this.splice(this.length,0, e);
+        }.bind(this));
+
+    } else {
+        this.splice(this.length, 0, value);
+    }
+}
+
 Array.prototype.remove = function(index) {
     this.splice(index, 1);
 }
@@ -37,6 +48,7 @@ Array.prototype.remove = function(index) {
 
 // List로 사용하기
 var a = [1, 2, 4];
+
 
 console.log(a);
 
@@ -48,3 +60,8 @@ console.log(a);
 
 a.insert(2, ['a', 'b', 'c']);  // 기대 [1, 2, 'a', 'b', 'c']
 console.log(a);                // 결과 
+
+
+var b = [1,3];
+b.add([5,7]);
+console.log(b);

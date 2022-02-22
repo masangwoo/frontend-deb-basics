@@ -19,7 +19,7 @@ o1.info();
 
 // MyObject 객체 생성2
 var o2 = new MyObject("마이콜", 30);
-o2.info = function() {
-    console.log('비밀!');
-}
+// o2.info = function() {
+//     console.log('비밀!');
+// }
 o2.info();
