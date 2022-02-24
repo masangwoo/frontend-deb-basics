@@ -50,6 +50,7 @@ var changeImage = function() {
 		src: 'images/' + images[index].file
 	});
 }
+
 let slideShowing = true;
 var slide = function(){};
 
@@ -66,20 +67,20 @@ var slideShow = function(){
 				alt: images[index].name,
 				src: 'images/' + images[index].file
 			});
-		}, 3000);
+		}, 2000);
 		slideShowing = true;
 	}
 }
 
 $(function(){
-	$('#btn-change').click(changeImage);
+	$('#btn-change, img').click(changeImage);
 	changeImage();
 	
 	$('#btn-slideshow').click(slideShow);
 	slideShow();
 	
-	$('#btn-changes').click(changeImage);
-	changeImage();
+	//$('#btn-changes').click(changeImage);
+	//changeImage();
 });
 
 </script>
@@ -91,7 +92,7 @@ $(function(){
 			<button id="btn-slideshow">슬라이드쇼 시작</button>
 		</div>
 		<div>
-			<img id="btn-changes"/>
+			<img/>
 		</div>
 	</div>
 </body>
