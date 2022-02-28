@@ -13,7 +13,7 @@
    <!-- Message Converter, Handler Mapping Validator 생성 및 설정 -->
    <mvc:annotation-driven>
       <mvc:message-converters>
-         <!-- html(text) message converter -->
+         <!-- 1.html(text) message converter -->
          <bean class="org.springframework.http.converter.StringHttpMessageConverter">
             <property name="supportedMediaTypes">
                <list>
@@ -22,9 +22,9 @@
             </property>
          </bean>
          
-         <!-- XML message converter -->
+         <!-- 2.XML message converter -->
          
-         <!-- JSON message converter -->
+         <!-- 3.JSON message converter -->
          <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
             <property name="supportedMediaTypes">
                <list>

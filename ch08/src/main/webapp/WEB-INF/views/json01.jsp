@@ -37,7 +37,7 @@ $(function() {
 </script>
 </head>
 <body>
-   <h1>AJAX Test: JSON Format Data</h1>
+   <h1>AJAX Test: JSON Format Data : $.ajax 함수 사용하기</h1>
 
    <button>데이터가져오기</button>
    <div id="data"></div>
