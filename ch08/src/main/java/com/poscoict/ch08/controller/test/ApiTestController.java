@@ -17,6 +17,11 @@ public class ApiTestController {
 		return "html";
 	}
 	
+	@RequestMapping("/xml")
+	public String xml() {
+		return "xml01";
+	}
+	
 	@RequestMapping("/json01")
 	public String json01() {
 		return "json01";
